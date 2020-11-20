@@ -1,0 +1,14 @@
+After testing for the results of batches in FDM methods, I reached some conclusions:
+Generally, when using FDM methods, we want to pay attention to N, the time dimensions or the number of steps that we do FDM,
+The bigger N, the more accuracy we have compared to the exact method as we can observed below (N=9999 for batch1,2,3,
+and N = 1,000,000 for batch 4, we will discuss this later)
+For batch1, When S = 60, Exact Solution: P = 5.84628, FDM Solution: P = 5.842068283
+For batch2, When S = 100, Exact Solution: P = 7.96557, FDM Solution: P = 7.950275271
+For batch3, When S = 5, Exact Solution: P = 4.07326, FDM Solution: P = 4.071284536
+For batch4, When S = 100, Exact Solution: P = 1.23750, FDM Solution: P = 1.195304255
+From the results above, I can conclude that with a big enough N, FDM method provides a good enough accurate results
+(up to 2 decimal place) compared to the exact solution. Now of course if N is not big enough, we will have some problem.
+If we look at batch 1, N= J =200 excel file, we can find that the Option price starts oscillating as asset prices increases,
+this is of course not true in reality. Same problem for batch 4 (J= 200, N = 10000). For this, N is obviously not big enough
+that the calculation converges into 65535. This is merely a mathematical issue and not true in reality.
+In short, FDM is efficient at estimating option price, but it needs a big enough steps of calculation.
