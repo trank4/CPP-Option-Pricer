@@ -1,1 +1,1 @@
-
+This folder contains main header and source files needed for Group E of the final project. The excel files contain graphs for the questions. If anything is missing, you may want to look in to UtilitiesDJD and VI.5 folders for addtional files.
