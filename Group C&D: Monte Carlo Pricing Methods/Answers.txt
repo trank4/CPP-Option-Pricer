@@ -1,0 +1,13 @@
+C. Monte Carlo 101
+b) Generally, the precision of the simulation increases as the number of trials increases, meaning there is less fluctuation between different number of trials as this NSIM gets higher. The relations between NT and accuracy 
+is less clear and depends on the specific option, but generally the higher NT provides the higher accuracy, but this is uncertain. For example, for batch 1, NSIM = 100000 provides acceptable precisions for both put and call options, 
+NT around 10 provides the most accurate price compared to exact soluntion for put option while NT around 70 provides the most accurate price compared to exact soluntion for call option. for batch 2, the same NSIM applies, 
+NT around 100 for put option and around 50 for call option.
+c)As discussed above, for put option NSIM = 100000 tends to provide the decent precision. As for NT, NT has to be at lease around 400 for put option to achieve the required accuracy of 2 decimal places. 
+For call option, precision tends to be pretty low, so NSIM = 200,000 and NT = 149 sometimes provide the required 2 decimal place accuracy, but not always. Higher NT tends to overestimate and lower NT tends to underestimate.
+///////////////////////////////////////
+D. Advanced MC
+b) For batch 1, SD and SE tend to approach 0 as NSIM increases, which is the same of what discussed above, meaning precision increases in tandem with NSIM.
+For Example: When NT = 10, NSIM = 1000, SD = 0.14451, SE = 0.0045698 but same NT but NSIM = 100000 then SD = 0.0140152, SE = 4E-05, showing that precision has increased significantly. SD and SE tend to be insignificant with NSIM > 50000.
+Bare in mind that SD and SE does not reflect the accuracy compared to Exact Solution. So through trials, NT = 10 give the closest prices to the exact method for put options while NT = 70 for Call options.
+For batch 2, the same reasoning applies. SD and SE also tend to be insignificant with NSIM > 50000.Through trials, NT = 100 give the closest prices to the exact method for put options while NT = 50 for Call options.
