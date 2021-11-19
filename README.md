@@ -1,2 +1,2 @@
 # C++-Option-Pricer
-This is the final project for my (Khoa Tran) Quantnet-Baruch C++ for Financial Engineering Certification. This only serves for the grad school admission purpose and will be taken down after. You can find the prompt in the "Level 9 Homework" pdf.
+Option pricing in C++: Applied object-oriented programming on dividing different types of options (European and perpetual American options) and functionalities into proper classes while utilized STL and Boost libraries for efficiency. Priced options using 3 different methods (closed form, Monte Carlo, finite difference) and calculated option greeks.
